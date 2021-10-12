@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="850.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RootCtr">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="661.0" prefWidth="1084.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <SplitPane dividerPositions="0.3835489833641405" prefHeight="677.0" prefWidth="1084.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="675.0" prefWidth="410.0">
+                     <children>
+                        <SplitPane dividerPositions="0.08108108108108109" layoutX="25.0" layoutY="10.0" orientation="VERTICAL" prefHeight="518.0" prefWidth="447.0" AnchorPane.bottomAnchor="305.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="39.0" prefWidth="337.0">
+                                 <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="64.0" layoutY="2.0" prefHeight="48.0" prefWidth="455.0" style="-fx-background-color: ORANGE;" text="EMPLOYEES LIST" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="537.0" prefWidth="337.0">
+                                 <children>
+                                    <GridPane prefHeight="465.0" prefWidth="445.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="196.0" minWidth="10.0" prefWidth="155.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="245.0" minWidth="10.0" prefWidth="245.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="84.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="178.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="193.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="214.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="209.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="216.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="213.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="226.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="207.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="196.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label style="-fx-background-color: ORANGE;" text="EMPLOYEE_ID" />
+                                          <Label style="-fx-background-color: ORANGE;" text="FIRST_NAME" GridPane.rowIndex="1" />
+                                          <Label style="-fx-background-color: ORANGE;" text="LAST_NAME" GridPane.rowIndex="2" />
+                                          <Label style="-fx-background-color: ORANGE;" text="EMAIL" GridPane.rowIndex="3" />
+                                          <Label style="-fx-background-color: ORANGE;" text="PHONE_NUMBER" GridPane.rowIndex="4" />
+                                          <Label style="-fx-background-color: ORANGE;" text="HIRE_DATE" GridPane.rowIndex="5" />
+                                          <Label style="-fx-background-color: ORANGE;" text="JOB_ID" GridPane.rowIndex="6" />
+                                          <Label style="-fx-background-color: ORANGE;" text="SALARY" GridPane.rowIndex="7" />
+                                          <Label style="-fx-background-color: ORANGE;" text="COMMISSION_PCT" GridPane.rowIndex="8" />
+                                          <Label style="-fx-background-color: ORANGE;" text="MANAGER_ID" GridPane.rowIndex="9" />
+                                          <Label style="-fx-background-color: ORANGE;" text="DEPARTMENT_ID" GridPane.rowIndex="10" />
+                                          <TextField fx:id="txtEmployee_id" promptText="자동으로 입력됩니다." GridPane.columnIndex="1" />
+                                          <TextField fx:id="txtFirst_name" promptText="FIRST_NAME" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <TextField fx:id="txtLast_name" promptText="LAST_NAME" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <TextField fx:id="txtEmail" promptText="EMAIL" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                          <TextField fx:id="txtPhone_number" promptText="000.0000.0000" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                          <TextField fx:id="txtSalary" promptText="SALARY" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                          <TextField fx:id="txtCommission_pct" promptText="0.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                          <TextField fx:id="txtManager_id" promptText="MANAGER_ID" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                                          <ComboBox fx:id="comJob_id" prefHeight="23.0" prefWidth="246.0" promptText="JOB_ID" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                          <TextField fx:id="txtHire_date" promptText="0000-00-00" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                          <TextField fx:id="txtDepartment_id" promptText="DEPARTMENT_ID" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                        <HBox alignment="CENTER" layoutX="36.0" layoutY="527.0" prefHeight="26.0" prefWidth="425.0" spacing="5.0" AnchorPane.bottomAnchor="285.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="530.0">
+                           <children>
+                              <Button fx:id="btnInsert" mnemonicParsing="false" onAction="#handleBtnInsert" style="-fx-background-color: orange;" text="INSERT" />
+                              <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#handleBtnUpdate" style="-fx-background-color: orange;" text="UPDATE" />
+                              <Button fx:id="btnClear" mnemonicParsing="false" onAction="#handleBtnClear" style="-fx-background-color: orange;" text="CLEAR" />
+                              <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#handleBtnDelete" style="-fx-background-color: ORANGE;" text="DELETE" />
+                              <Button fx:id="btnAllData" mnemonicParsing="false" onAction="#handleBtnAllData" style="-fx-background-color: ORANGE;" text="ALL DATA" />
+                              <Button fx:id="btnIndex" mnemonicParsing="false" onAction="#handleBtnIndex" style="-fx-background-color: ORANGE;" text="INDEX" />
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                        <VBox layoutY="558.0" prefHeight="270.0" prefWidth="487.0">
+                           <children>
+                              <AnchorPane prefHeight="265.0" prefWidth="487.0">
+                                 <children>
+                                    <Accordion prefHeight="269.0" prefWidth="487.0" style="-fx-background-color: orange; -fx-border-color: orange;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <panes>
+                                        <TitledPane animated="false" prefHeight="34.0" prefWidth="487.0" style="-fx-border-color: orange;" text="주어진 기간의 입사자 목록찾기">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <TextField fx:id="txtStart" layoutX="14.0" layoutY="8.0" promptText="0000-00-00" />
+                                                      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="162.0" layoutY="12.0" prefHeight="15.0" prefWidth="45.0" text="~" />
+                                                      <TextField fx:id="txtEnd" layoutX="207.0" layoutY="8.0" promptText="0000-00-00" />
+                                                      <Button fx:id="btnDateList" layoutX="377.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBtnDateList" prefHeight="23.0" prefWidth="95.0" style="-fx-background-color: orange;" text="찾기" />
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </TitledPane>
+                                        <TitledPane animated="false" prefHeight="133.0" prefWidth="445.0" style="-fx-border-color: orange;" text="많이 받는 급여순으로 본 직원 목록">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="36.0" prefWidth="485.0">
+                                                   <children>
+                                                      <Button fx:id="btnSalary" layoutX="376.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBtnSalary" prefHeight="23.0" prefWidth="95.0" style="-fx-background-color: orange;" text="목록보기" />
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </TitledPane>
+                                        <TitledPane animated="false" style="-fx-border-color: orange;" text="커밋션율이 0.1이상인 직원목록">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Button fx:id="btnCommissionList" layoutX="366.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBtnCommissionList" prefHeight="23.0" prefWidth="98.0" style="-fx-background-color: orange;" text="목록보기" />
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </TitledPane>
+                                        <TitledPane animated="false" style="-fx-border-color: orange;" text="이름으로 직원 찾기">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <TextField fx:id="txtFirstName" layoutX="26.0" layoutY="8.0" prefHeight="23.0" prefWidth="186.0" promptText="FIRSTNAME" />
+                                                      <Button fx:id="btnFirstName" layoutX="364.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBtnFirstName" prefHeight="23.0" prefWidth="95.0" style="-fx-background-color: orange;" text="찾기" />
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </TitledPane>
+                                        <TitledPane animated="false" prefHeight="163.0" prefWidth="487.0" style="-fx-border-color: orange;" text="salary가 10000원 이상인 직원목록">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Button fx:id="btnSalaryList" layoutX="355.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBtnSalaryList" prefHeight="23.0" prefWidth="116.0" style="-fx-background-color: orange;" text="목록보기" />
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </TitledPane>
+                                        <TitledPane animated="false" style="-fx-border-color: orange;" text="전화번호로 직원 찾기">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <TextField fx:id="txtPhone" layoutX="31.0" layoutY="8.0" prefHeight="23.0" prefWidth="191.0" promptText="PHONE_NUMBER" />
+                                                      <Button fx:id="btnPhone" layoutX="343.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBtnPhone" prefHeight="23.0" prefWidth="95.0" style="-fx-background-color: orange;" text="찾기" />
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </TitledPane>
+                                        <TitledPane animated="false" style="-fx-border-color: orange;" text="이메일로 직원 찾기">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Button fx:id="btnEmail" layoutX="327.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBtnEmail" prefHeight="23.0" prefWidth="98.0" style="-fx-background-color: orange;" text="찾기" />
+                                                      <TextField fx:id="txtEmailSelect" layoutX="28.0" layoutY="8.0" prefHeight="23.0" prefWidth="182.0" promptText="EMAIL" />
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </TitledPane>
+                                        <TitledPane animated="false" prefHeight="84.0" prefWidth="485.0" style="-fx-border-color: orange;" text="직업id별로 본 직원 목록 ">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <ComboBox fx:id="comJobId" layoutX="291.0" layoutY="8.0" prefHeight="23.0" prefWidth="167.0" promptText="comJobId" style="-fx-background-color: orange;" />
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </TitledPane>
+                                      </panes>
+                                    </Accordion>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </AnchorPane>
+                  <AnchorPane fx:id="rightPanel" minHeight="0.0" minWidth="0.0" prefHeight="658.0" prefWidth="642.0">
+                     <children>
+                        <BorderPane fx:id="txtPane" prefHeight="677.0" prefWidth="651.0" style="-fx-border-color: orange; -fx-border-width: 3;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
